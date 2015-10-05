@@ -1,0 +1,19 @@
+﻿Build started 10/5/2015 3:35:07 PM.
+     1>Project "C:\Users\Peter\Desktop\AI-Lab-2\Project\PathSearch\PathSearch.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt PathSearch.cpp
+         PathSearch.cpp
+     1>c:\users\peter\desktop\ai-lab-2\project\pathsearch\pathsearch.cpp(82): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\peter\desktop\ai-lab-2\project\pathsearch\pathsearch.cpp(83): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\peter\desktop\ai-lab-2\project\pathsearch\pathsearch.cpp(195): warning C4244: 'initializing' : conversion from 'long' to 'float', possible loss of data
+     1>c:\users\peter\desktop\ai-lab-2\project\pathsearch\pathsearch.cpp(208): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\peter\desktop\ai-lab-2\project\pathsearch\pathsearch.cpp(293): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Peter\Desktop\AI-Lab-2\Project\Debug\PathSearch.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Peter\Desktop\AI-Lab-2\Project\Debug\PathSearch.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Peter\Desktop\AI-Lab-2\Project\Debug\PathSearch.lib" /MACHINE:X86 /SAFESEH:NO /DLL Debug\PathSearch.obj
+         "C:\Users\Peter\Desktop\AI-Lab-2\Project\Debug\TileSystem.lib"
+         PathSearch.vcxproj -> C:\Users\Peter\Desktop\AI-Lab-2\Project\Debug\PathSearch.dll
+     1>Done Building Project "C:\Users\Peter\Desktop\AI-Lab-2\Project\PathSearch\PathSearch.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.04

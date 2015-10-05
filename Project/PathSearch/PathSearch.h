@@ -26,12 +26,62 @@
 #include "../TileSystem/Tile.h"
 #include "../TileSystem/TileMap.h"
 #include "../platform.h"
+#include "../PriorityQueue.h"
 #include <vector>
+#include <map>
+#include <queue>
+#include <cmath>
 
 namespace fullsail_ai { namespace algorithms {
 
+	bool areAdjacent(Tile const* lhs, Tile const* rhs);
+	float distance(Tile const* lhs, Tile const* rhs);
+
+	struct PlannerNode;
+
+	struct SearchNode
+	{
+
+		Tile* data;
+		std::vector<SearchNode*> edges;
+		PlannerNode* myPlanner;
+
+		float heuristicCost;
+		float givenCost = 0;
+		float finalCost = 0;
+
+	};
+
+	struct PlannerNode
+	{
+
+		PlannerNode* parent;
+		SearchNode* Vertex;
+
+	};
+
+	bool BreadthFirstSort(SearchNode* const&, SearchNode* const&);
+
 	class PathSearch
 	{
+
+		std::map<Tile*, SearchNode*> SearchMap;
+		TileMap* currentTileMap;
+
+		SearchNode* startNode;
+		SearchNode* goalNode;
+
+		PriorityQueue<SearchNode*>* searchQueue;
+		//std::queue<SearchNode*> searchQueue;
+		std::vector<PlannerNode*> cleanMe;
+		std::vector<PlannerNode*> solution;
+		std::map<SearchNode*, bool> nodeState;
+
+		long currentTime;
+		long startTime;
+
+		bool reachedGoal = false;
+
 	public:
 		//! \brief Default constructor.
 		DLLEXPORT PathSearch();

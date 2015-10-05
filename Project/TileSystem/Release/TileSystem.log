@@ -1,0 +1,18 @@
+﻿Build started 10/5/2015 2:18:53 PM.
+     1>Project "C:\Users\Peter\Desktop\AI-Lab-2\Project\TileSystem\TileSystem.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Tile.cpp TileMap.cpp
+         Tile.cpp
+         TileMap.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Peter\Desktop\AI-Lab-2\Project\Release\TileSystem.dll" /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Peter\Desktop\AI-Lab-2\Project\Release\TileSystem.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Peter\Desktop\AI-Lab-2\Project\Release\TileSystem.lib" /MACHINE:X86 /SAFESEH:NO /DLL Release\Tile.obj
+         Release\TileMap.obj
+            Creating library C:\Users\Peter\Desktop\AI-Lab-2\Project\Release\TileSystem.lib and object C:\Users\Peter\Desktop\AI-Lab-2\Project\Release\TileSystem.exp
+         Generating code
+         Finished generating code
+         TileSystem.vcxproj -> C:\Users\Peter\Desktop\AI-Lab-2\Project\Release\TileSystem.dll
+     1>Done Building Project "C:\Users\Peter\Desktop\AI-Lab-2\Project\TileSystem\TileSystem.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.68
